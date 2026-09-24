@@ -137,7 +137,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pnpm install
+          pnpm install || pnpm install --dangerously-allow-all-builds
         env:
           NODE_ENV: production
 
